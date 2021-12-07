@@ -12,6 +12,8 @@ function App() {
         <p>
           Tienda virtual - Rincón Añejo
         </p>
+        <span>Un gusto para tu paladar</span>
+        <br />
         <a
           className="App-link"
           href="https://reactjs.org"
