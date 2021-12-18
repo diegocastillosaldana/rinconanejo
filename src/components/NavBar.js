@@ -1,10 +1,8 @@
 import React from 'react'
 import logorincon from '../logorincon.png';
-import carrito from '../carrito.svg';
 import flecha from '../flacha.svg';
-import menu from '../menu';
 import barramenu from '../menu.svg';
-import '../App.css';
+import CartWidget from '../components/CartWidget';
 
 const NavBar = () => {
     return (
@@ -27,11 +25,10 @@ const NavBar = () => {
                         </ul> 
                     </li>
                     <li className="menu-item"><a className="hvr-underline-from-center" href="#Promociones">Promociones</a></li>
-                    <li className="menu-item li-carrito"><a className="hvr-underline-from-center" href="#carrito"><img src={carrito} className="carrito" alt="carrito"/></a></li>
+                    <CartWidget/>
                 </ul>
             </nav>
         </div>
-        <script src={menu}></script>
         </header>        
     )
 }
