@@ -1,5 +1,8 @@
 import React from 'react'
 import Item from './Item'
+import piscoQuebranta from "../assets/img/pisco/quebranta.png";
+import piscoAcholado from "../assets/img/pisco/acholado.png";
+import piscoItalia from "../assets/img/pisco/italia.png";
 import { useEffect, useState } from 'react'
 
 const ItemList = () => {
@@ -17,19 +20,22 @@ const ItemList = () => {
                     name: "Pisco Quebranta",
                     origin: "Viña D' Los Campos",
                     stock: 10,          
-                    price: 15
+                    price: 15,
+                    imgProd: piscoQuebranta
                 },
                 {
                     name: "Pisco Acholado",
                     origin: "Viña D' Los Campos",
                     stock: 7,   
-                    price: 20         
+                    price: 20,
+                    imgProd: piscoAcholado      
                 },
                 {
                     name: "Piso Puro",
                     origin: "Viña D' Los Campos",
                     stock: 5, 
-                    price: 25           
+                    price: 25,
+                    imgProd: piscoItalia              
                 }
             ]
             setTimeout(() => {

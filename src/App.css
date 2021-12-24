@@ -454,6 +454,15 @@ form {
 
 /* Utilities
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.contentImg{
+  display: flex;
+  justify-content: center;
+}
+.u-medium-width{
+  width: 50%;
+  box-sizing: border-box;
+  margin: 15px;
+}
 .u-full-width {
   width: 100%;
   box-sizing: border-box; }

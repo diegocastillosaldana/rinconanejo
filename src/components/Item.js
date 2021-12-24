@@ -5,7 +5,9 @@ const Item = ({piscos, add}) => {
     return (
         <div className="four columns">
                 <div className="card">
-                    {/* <img src="img/curso1.jpg" className="imagen-curso u-full-width"/> */}
+                    <div className="contentImg">
+                        <img src={piscos.imgProd} alt={piscos.title} className="imagen-curso u-medium-width"/>
+                    </div>
                     <div className="info-card">
                         <h4>{piscos.name}</h4>
                         <p>{piscos.origin}</p>
