@@ -1,14 +1,18 @@
 import React from 'react'
-import carrito from '../carrito.svg';
-import '../App.css';
+import Carrito from '../assets/iconos/carrito.png';
+
 
 const CartWidget = () => {
     return (
-        <li className="menu-item li-carrito"><a className="hvr-underline-from-center" href="#carrito"><img src={carrito} className="carrito" alt="carrito"/>&nbsp;<span>4</span></a></li>
+        <li className="icons">
+          <a href="cart.html">
+            <span>
+            <img src={Carrito} alt="" />
+            <small className="count d-flex">4</small>
+          </span>
+          </a>
+        </li>
     )
 }
 
 export default CartWidget
-
-//rafce -> shortcut
-

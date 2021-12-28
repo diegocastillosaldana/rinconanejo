@@ -1,21 +1,28 @@
 import React from 'react'
-import ItemCount from './ItemCount';
+import { Link } from "react-router-dom";
 
-const Item = ({piscos, add}) => {
+const Item = ({productos}) => {
     return (
-        <div className="four columns">
-                <div className="card">
-                    <div className="contentImg">
-                        <img src={piscos.imgProd} alt={piscos.title} className="imagen-curso u-medium-width"/>
-                    </div>
-                    <div className="info-card">
-                        <h4>{piscos.name}</h4>
-                        <p>{piscos.origin}</p>
-                        <p className="precio">Stock: {piscos.stock}u<span className="u-pull-right ">$ <span>{piscos.price}</span></span></p>
-                        <ItemCount stock={piscos.stock} initial={1}/>
-                        <button className="u-full-width button-primary button input agregar-carrito" data-id="1">Agregar Al Carrito</button>  
-                    </div>
+        <div className="product">
+            <div className="img-container">
+            <img src={productos.imgProd} alt={productos.title} />
+                <div className="addCart">
+                    <i className="fas fa-shopping-cart"></i>
                 </div>
+                <ul className="side-icons">
+                    <Link key={productos.id} to={`/item/${productos.id}`}> 
+                        <button className="btnInfo"><span><i className="fas fa-search"></i></span></button>
+                    </Link>
+                </ul>
+            </div>
+            <div className="bottom">
+                <Link key={productos.id} to={`/item/${productos.id}`}>
+                    <a href="#sa">{productos.name}</a>
+                    <div className="price">
+                        <span>S/ {productos.price}</span>
+                    </div>
+                </Link>
+            </div>
         </div>
     )
 }

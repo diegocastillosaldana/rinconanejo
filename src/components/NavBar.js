@@ -1,35 +1,73 @@
 import React from 'react'
-import logorincon from '../logorincon.png';
-import flecha from '../flacha.svg';
-import barramenu from '../menu.svg';
-import CartWidget from '../components/CartWidget';
+import { NavLink } from 'react-router-dom';
+import Arrow from '../assets/iconos/flecha.png';
+import Logo from '../assets/iconos/logorincon.png';
+import CartWidget from './CartWidget';
+import NavImg from '../assets/img/newnav.png';
 
 const NavBar = () => {
     return (
-        <header className="header">
-        <div className="container logo-nav-container">
-            <a href="#inicio" className="logo"><img src={logorincon} alt="logo"/></a>
-            <nav class="navigation">
-                <span className="nav-bar" id="btnMenu"><img src={barramenu} alt="menu"/></span>
-                <ul className="menu">
-                    <li className="menu-item container-submenu"><a className="hvr-underline-from-center" href="#Vinos">Vinos<img className="flecha" src={flecha} alt="flecha"/></a>
-                        <ul className="submenu">
-                            <li className="submenu-item"><a className="hvr-underline-from-center" href="#Tintos">Tintos</a></li>
-                            <li className="submenu-item"><a className="hvr-underline-from-center" href="#Blancos">Blancos</a></li>
-                        </ul>
-                    </li>
-                    <li className="menu-item container-submenu"><a className="hvr-underline-from-center" href="#Pisco">Pisco<img className="flecha" src={flecha} alt="flecha"/></a>
-                         <ul className="submenu">
-                            <li className="submenu-item"><a className="hvr-underline-from-center" href="#Tintos">Puro</a></li>
-                            <li className="submenu-item"><a className="hvr-underline-from-center" href="#Blancos">Acholado</a></li>
-                        </ul> 
-                    </li>
-                    <li className="menu-item"><a className="hvr-underline-from-center" href="#Promociones">Promociones</a></li>
-                    <CartWidget/>
+        <nav className="nav">
+            <div className="wrapper container">
+                <div className="logo">
+                  <NavLink to="/" exact="true">
+                    <a href="#a"><img style={{width: "120px"}} src={Logo} alt="logo"/></a>
+                  </NavLink>
+                </div>
+                <ul className="nav-list">
+                    <div className="top">
+                        <label for="" className="btn close-btn"><img src={Arrow} alt="" /></label>
+                  </div>
+        <li>
+          <NavLink to="/" >
+            <a href="#a">Inicio</a>
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to="/productos/">
+            <a href="#a" className="desktop-item">Productos <span><i className="fas fa-chevron-down"></i></span></a>
+          </NavLink>
+          <input type="checkbox" id="showMega" />
+          <label for="showMega" className="mobile-item">Productos <span><i className="fas fa-chevron-down"></i></span></label>
+          <div className="mega-box">
+            <div className="content">
+              <div className="row">
+                <img src={NavImg} alt="" />
+              </div>
+              <div className="row">
+                <header>Vinos</header>
+                <ul className="mega-links">
+                  <li><a href="#a">Gran Reserva</a></li>
+                  <li><a href="#a">Manzanillo</a></li>
+                  <li><a href="#a">Semi Seco</a></li>
                 </ul>
-            </nav>
-        </div>
-        </header>        
+              </div>
+              <div className="row">
+                <header>Pisco</header>
+                <ul className="mega-links">
+                  <li><a href="#a">Pisco</a></li>
+                  <li><a href="#a">Macerado</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <a href="#a" className="desktop-item">Nosotros <span><i className="fas fa-chevron-down"></i></span></a>
+          <input type="checkbox" id="showdrop2" />
+          <label for="showdrop2" className="mobile-item">Nosotros <span><i className="fas fa-chevron-down"></i></span></label>
+          <ul className="drop-menu2">
+            <li><a href="#a">Conócenos</a></li>
+            <li><a href="#a">Contacto</a></li>
+            <li><a href="#a">Preguntas Frecuentes</a></li>
+          </ul>
+        </li>
+        <CartWidget/>
+      </ul>
+      <label for="" className="btn open-btn"><i className="fas fa-bars"></i></label>
+    </div>
+  </nav>     
     )
 }
 

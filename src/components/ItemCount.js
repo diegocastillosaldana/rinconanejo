@@ -15,12 +15,12 @@ function ItemCount ({stock,initial}){
     
 
     return (
-        <div>
-            <div style={{textAlign: "center", marginBottom: "10px"}}>
-                <span style={{display: "flex", alignItems: "center", backgroundColor: "#b6b6b647", border: "solid 1px #6a6a6a47", borderRadius: '20px',justifyContent: "space-between", fontSize: '21px'}}>
-                    <button style={{display: 'flex',alignItems: "center",marginBottom: "1px", padding: '0 0 0 15px', border: 'none', fontSize: '30px'}}onClick={restar}>-</button>
+        <div style={{width: "200px"}}>
+            <div style={{textAlign: "center", marginBottom: "10px", width: "200px"}}>
+                <span style={{display: "flex", alignItems: "center",width: "200px", border: "solid 1px #6a6a6a47", borderRadius: '20px',justifyContent: "space-between", fontSize: '21px'}}>
+                    <button style={{borderRadius: "20px",display: 'flex',alignItems: "center",marginBottom: "1px", padding: '0 15px', border: 'none', fontSize: '30px'}}onClick={restar}>-</button>
                     {contador}
-                    <button style={{display: 'flex',alignItems: "center",marginBottom: "1px",padding: '0 15px 0 0', border: 'none', fontSize: '30px'}} onClick={aumentar}>+</button>
+                    <button style={{borderRadius: "20px",display: 'flex',alignItems: "center",marginBottom: "1px",padding: '0 10px', border: 'none', fontSize: '30px'}} onClick={aumentar}>+</button>
                 </span>
             </div>
         </div>
