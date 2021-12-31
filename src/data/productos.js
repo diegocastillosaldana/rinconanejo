@@ -28,7 +28,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 10,          
         price: 15,
-        cat: "Pisco",
+        categoria: "pisco",
         imgProd: piscoQuebranta
     },
     {
@@ -37,7 +37,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 7,   
         price: 20,
-        cat: "Pisco",
+        categoria: "pisco",
         imgProd: piscoAcholado      
     },
     {
@@ -46,7 +46,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 25,
-        cat: "Pisco",
+        categoria: "pisco",
         imgProd: piscoItalia              
     },
     {
@@ -55,7 +55,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 25,
-        cat: "Pisco",
+        categoria: "pisco",
         imgProd: mostroVerdeItalia
     },
     {
@@ -64,7 +64,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 25,
-        cat: "Pisco",
+        categoria: "pisco",
         imgProd: mostroVerdeQuebranta
     },
     {
@@ -73,7 +73,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 20,
-        cat: "Macerado",
+        categoria: "macerado",
         imgProd: maceradoMaracuya              
     },
     {
@@ -82,7 +82,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 20,                    
-        cat: "Macerado",
+        categoria: "macerado",
         imgProd: maceradoAguaymanto              
     },
     {
@@ -91,7 +91,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 20,
-        cat: "Macerado",
+        categoria: "macerado",
         imgProd: maceradoDamasco             
     },
     {
@@ -100,7 +100,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 20,
-        cat: "Macerado",
+        categoria: "macerado",
         imgProd: maceradoPasas            
     },
     {
@@ -109,7 +109,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 30,
-        cat: "Gran Reseva",
+        categoria: "gran-reserva",
         imgProd: reservaBorgonaBlanca              
     },
     {
@@ -118,7 +118,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 30,
-        cat: "Gran Reseva",
+        categoria: "gran-reserva",
         imgProd: reservaBorgonaNegra              
     },
     {
@@ -127,7 +127,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 30,
-        cat: "Gran Reseva",
+        categoria: "gran-reserva",
         imgProd: reservaGranRose              
     },
     {
@@ -136,7 +136,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 28,
-        cat: "SemiSeco",
+        categoria: "semi-seco",
         imgProd: semisecoBorgonaBlanca              
     },
     {
@@ -145,7 +145,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 28,
-        cat: "SemiSeco",
+        categoria: "semi-seco",
         imgProd: semisecoGranMistura              
     },
     {
@@ -154,7 +154,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 28,
-        cat: "SemiSeco",
+        categoria: "semi-seco",
         imgProd: semisecoBlancoDeBlancos             
     },
     {
@@ -163,7 +163,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 28,
-        cat: "SemiSeco",
+        categoria: "semi-seco",
         imgProd: semisecoBorgonaNegra             
     },
     {
@@ -172,7 +172,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 28,
-        cat: "SemiSeco",
+        categoria: "semi-seco",
         imgProd: semisecoQuebranta             
     },
     {
@@ -181,7 +181,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 15,
-        cat: "Manzanillo",
+        categoria: "manzanillo",
         imgProd: manzanilloAmorPerfecto             
     },
     {
@@ -190,7 +190,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 15,
-        cat: "Manzanillo",
+        categoria: "manzanillo",
         imgProd: manzanilloDoradaTentacion
     },
     {
@@ -199,7 +199,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 15,
-        cat: "Manzanillo",
+        categoria: "manzanillo",
         imgProd: manzanilloDulcePecado
     },
     {
@@ -208,7 +208,7 @@ export default [
         origin: "Viña D' Los Campos",
         stock: 5, 
         price: 15,
-        cat: "Manzanillo",
+        categoria: "manzanillo",
         imgProd: manzanilloMilagroAzul
     }
 ];

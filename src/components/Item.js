@@ -2,6 +2,8 @@ import React from 'react'
 import { Link } from "react-router-dom";
 
 const Item = ({productos}) => {
+
+    
     return (
         <div className="product">
             <div className="img-container">

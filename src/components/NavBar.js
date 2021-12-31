@@ -4,8 +4,10 @@ import Arrow from '../assets/iconos/flecha.png';
 import Logo from '../assets/iconos/logorincon.png';
 import CartWidget from './CartWidget';
 import NavImg from '../assets/img/newnav.png';
+import categorias from "../data/categorias";
 
 const NavBar = () => {
+    //categorias.map((categoria)=> console.log(categoria));
     return (
         <nav className="nav">
             <div className="wrapper container">
@@ -37,16 +39,16 @@ const NavBar = () => {
               <div className="row">
                 <header>Vinos</header>
                 <ul className="mega-links">
-                  <li><a href="#a">Gran Reserva</a></li>
-                  <li><a href="#a">Manzanillo</a></li>
-                  <li><a href="#a">Semi Seco</a></li>
+                  <li key={categorias[0].id}><NavLink to={`/productos/category/${categorias[0].name}`}>Gran Reserva</NavLink></li>
+                  <li key={categorias[1].id}><NavLink to={`/productos/category/${categorias[1].name}`}>Manzanillo</NavLink></li>
+                  <li key={categorias[2].id}><NavLink to={`/productos/category/${categorias[2].name}`}>Semi Seco</NavLink></li>
                 </ul>
               </div>
               <div className="row">
                 <header>Pisco</header>
                 <ul className="mega-links">
-                  <li><a href="#a">Pisco</a></li>
-                  <li><a href="#a">Macerado</a></li>
+                  <li key={categorias[3].id}><NavLink to={`/productos/category/${categorias[3].name}`}>Pisco</NavLink></li>
+                  <li key={categorias[4].id}><NavLink to={`/productos/category/${categorias[4].name}`}>Macerado</NavLink></li>
                 </ul>
               </div>
             </div>

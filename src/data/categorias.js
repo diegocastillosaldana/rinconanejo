@@ -2,22 +2,22 @@
 export default [
     {
       id: 1,
-      name: "Gran-Reserva",
+      name: "gran-reserva",
     },
     {
       id: 2,
-      name: "Manzanillo",
+      name: "manzanillo",
     },
     {
       id: 3,
-      name: "Semi-Seco",
+      name: "semi-seco",
     },
     {
       id: 4,
-      name: "Pisco",
+      name: "pisco",
     },
     {
       id: 5,
-      name: "Macerado",
+      name: "macerado",
     }
   ];

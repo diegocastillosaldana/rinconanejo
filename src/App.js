@@ -13,11 +13,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Slider/>}/>
         <Route path="/productos/" exact="true" element={<ItemListContainer/>}/>
-        <Route path="/productos/categoria/:catgoriaId" element={<ItemListContainer/>}/>
+        <Route path="/productos/category/:categoryId" element={<ItemListContainer/>}/>
         <Route path="/item/:id" element={<ItemDetailContainer />} />
       </Routes>
-      <script src="../src/funciones/funcionesSlider.js"></script>
-    <script src="../src/funciones/funcionesInicio.js"></script>
     </BrowserRouter>
   );
 }

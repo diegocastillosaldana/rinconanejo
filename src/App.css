@@ -83,7 +83,7 @@ nav {
   line-height: 8rem;
 }
 
-.nav.fix-nav {
+.nav {
   width: 100%;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   z-index: 999;
@@ -176,6 +176,7 @@ nav .wrapper {
   opacity: 0;
   visibility: hidden;
   transition: all 300ms ease;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
 }
 
 .mega-box .content {
@@ -194,6 +195,7 @@ nav .wrapper {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: drop-shadow(15px 15px 15px rgb(0 0 0 / 30%) );
 }
 
 .content .row header {

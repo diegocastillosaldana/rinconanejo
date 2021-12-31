@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
                     </div>
                     <div className="right pad">
                         <div>
-                            <span>{item.cat}</span>
+                            <span>{item.categoria}</span>
                             <h1>{item.name}</h1>
                             <h3>{item.origin}</h3>
                             <p>
