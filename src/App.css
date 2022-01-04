@@ -85,7 +85,7 @@ nav {
 
 .nav {
   width: 100%;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 10%);
   z-index: 999;
 }
 
@@ -699,7 +699,7 @@ nav .wrapper {
 .product .img-container img {
   object-fit: cover;
   height: 100%;
-  width: 60%;
+  width: 80%;
 }
 
 .product .bottom {
@@ -1115,7 +1115,7 @@ th:last-child {
 /* PRODUCT DETAILS */
 
 .product-detail {
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
 .product-detail .details {

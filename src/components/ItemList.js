@@ -3,7 +3,6 @@ import Item from './Item'
 import Loader from "react-loader-spinner";
 import { useEffect, useState } from 'react';
 import productosItem from "../data/productos.js";
-import { Link } from "react-router-dom";
 
 const ItemList = ({ soloCategoria }) => {
     const [productos, setProductos] = useState([])
