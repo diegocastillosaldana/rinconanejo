@@ -1217,11 +1217,15 @@ th:last-child {
   margin-right: 2rem;
 }
 
-.product-detail .form .addCart {
+.product-detail .addCart {
   background: var(--primary);
   padding: 0.8rem 4rem;
   color: var(--white);
   border-radius: 3rem;
+  border: none;
+  font-size: 23px;
+  cursor: pointer;
+  height: 48px;
 }
 
 .product-detail h3 {

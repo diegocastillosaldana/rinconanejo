@@ -1,7 +1,20 @@
 import React from 'react'
 import ItemCount from './ItemCount';
+import { useEffect, useState } from 'react';
+import { Link } from "react-router-dom";
 
 const ItemDetail = ({ item }) => {
+
+    const [added, setAdded] = useState(false)
+
+    const onAdd = () => {
+        setAdded(true);
+    }
+
+    useEffect(() =>{
+        console.log('added', added);
+    },[added])
+
     return (
         <div>
             <section className="section product-detail">
@@ -24,12 +37,20 @@ const ItemDetail = ({ item }) => {
                             <br/>
                             <p>Stock: {item.stock}u</p>
                             <div className="price">S/ {item.price} por unidad</div>
-                            <div style={{width: "200px", display: "block", marginBottom: "10px"}}>                                          
-                                <ItemCount stock={item.stock} initial={1}/>
-                            </div>  
-                            <form className="form">                                                        
-                                <a href="cart.html" className="addCart">Add To Cart</a>
-                            </form>
+                            <div style={{display: "block", marginBottom: "10px"}}>          
+                                {!added &&
+                                    <ItemCount onAdd={onAdd} stock={item.stock} initial={1}/>
+                                }{added &&
+                                    <>
+                                        <h1 style={{color: "#69ae14", marginLeft: "80px"}}>✓</h1>
+                                        <Link to={`/cart`}>
+                                            <button className="addCart">ir al carrito</button>
+                                        </Link>
+                                    </>
+                                }                               
+                                
+                            </div>                            
+                            {/* <a href="cart.html" className="addCart">Add To Cart</a> */}
                         </div>                                                    
                     </div>
                 </div>
