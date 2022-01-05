@@ -27,6 +27,12 @@ const ItemListContainer = () => {
           </div>
 
           <ul className="block-content">
+          <li>
+              <label>
+                <span><NavLink to="/productos/">Todos</NavLink></span>
+              </label>
+            </li>
+
             <li>
               <label>
                 <span key={categorias[0].id}><NavLink to={`/productos/category/${categorias[0].name}`}>Gran Reserva</NavLink></span>

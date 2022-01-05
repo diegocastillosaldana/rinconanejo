@@ -1384,6 +1384,11 @@ th:last-child {
   margin-left: 1rem;
 }
 
+.block-content li label:hover {
+  color: var(--primary);
+  font-weight: 900;
+}
+
 .block-content li label small {
   font-size: 1rem;
 }
