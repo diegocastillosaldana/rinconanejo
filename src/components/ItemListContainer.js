@@ -23,7 +23,7 @@ const ItemListContainer = () => {
       <div className="col-1-of-4">
         <div>
           <div className="block-title">
-            <h3>Category</h3>
+            <h3>Categorias</h3>
           </div>
 
           <ul className="block-content">

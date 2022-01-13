@@ -44,7 +44,7 @@ const ItemDetail = ({ item }) => {
                                     <>
                                         <h1 style={{color: "#69ae14", marginLeft: "80px"}}>✓</h1>
                                         <Link to={`/cart`}>
-                                            <button className="addCart">ir al carrito</button>
+                                            <button className="addCart">Ir al carrito</button>
                                         </Link>
                                     </>
                                 }                               
