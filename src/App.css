@@ -29,7 +29,7 @@ body {
   font-weight: 400;
 }
 
-main{
+main {
   padding-top: 50px;
 }
 
@@ -142,8 +142,83 @@ nav .wrapper {
   transition: all 300ms ease;
 }
 
+.nav-list .drop-menu3 {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  width: 36rem;
+  top: 8.5rem;
+  line-height: 4.5rem;
+  position: absolute;
+  right: -90px;
+  background-color: var(--white);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms ease;
+  border-radius: 0 0 20px 20px !important;
+}
+
+/**/
+.nav-list .drop-menu3 .title {
+  text-align: center;
+  background-color: #69ae14;
+  color: white;
+  border-radius: 20px 20px 0 0;
+  margin-bottom: 10px;
+}
+
+.nav-list .drop-menu3 .title h3 {
+  line-height: 30px;
+}
+
+.nav-list .drop-menu3 .cont {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-list .drop-menu3 .cont .nombrePrecio {
+  width: 182px;
+}
+
+.nav-list .drop-menu3 .cont .nombrePrecio h4 {
+  line-height: 16px;
+}
+.nav-list .drop-menu3 .cont .nombrePrecio p {
+  margin-top: 5px;
+  line-height: 16px;
+}
+
+.nav-list .drop-menu3 .cont .artImg img {
+  width: 30px;
+}
+
+.nav-list .drop-menu3 .cont button {
+  padding: 7px 10px;
+  border-radius: 50%;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+.nav-list .drop-menu3 .btns {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+.nav-list .drop-menu3 .btns button {
+  width: 45%;
+  padding: 10px;
+  background-color: #88a7d04f;
+  border: none;
+  border-radius: 10px;
+}
+
+/**/
+
 .nav-list .drop-menu1 li a,
-.nav-list .drop-menu2 li a {
+.nav-list .drop-menu2 li a,
+.nav-list .drop-menu3 li a {
   display: block;
   font-size: 1.5rem;
   width: 100%;
@@ -153,12 +228,14 @@ nav .wrapper {
 }
 
 .nav-list .drop-menu1 li a:hover,
-.nav-list .drop-menu2 li a:hover {
+.nav-list .drop-menu2 li a:hover,
+.nav-list .drop-menu3 li a:hover {
   color: var(--primary);
 }
 
 .nav-list li:hover .drop-menu1,
 .nav-list li:hover .drop-menu2,
+.nav-list li:hover .drop-menu3,
 .nav-list li:hover .mega-box {
   opacity: 1;
   visibility: visible;
@@ -195,7 +272,7 @@ nav .wrapper {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: drop-shadow(15px 15px 15px rgb(0 0 0 / 30%) );
+  filter: drop-shadow(15px 15px 15px rgb(0 0 0 / 30%));
 }
 
 .content .row header {
@@ -237,6 +314,14 @@ nav .wrapper {
   font-size: 2rem;
   cursor: pointer;
   display: none;
+}
+
+.nav-list .icons {
+  margin-left: 20px;
+}
+
+.nav-list .icons .carritoImg {
+  width: 30px;
 }
 
 .nav-list .icons span {
@@ -295,7 +380,8 @@ nav .wrapper {
   }
 
   .nav-list .drop-menu1,
-  .nav-list .drop-menu2 {
+  .nav-list .drop-menu2,
+  .nav-list .drop-menu3 {
     position: static;
     opacity: 1;
     visibility: visible;
@@ -308,17 +394,20 @@ nav .wrapper {
 
   #showdrop1:checked ~ .drop-menu1,
   #showdrop2:checked ~ .drop-menu2,
+  #showdrop3:checked ~ .drop-menu3,
   #showMega:checked ~ .mega-box {
     max-height: 100%;
   }
 
   .nav-list .drop-menu1 li,
-  .nav-list .drop-menu2 li {
+  .nav-list .drop-menu2 li,
+  .nav-list .drop-menu3 li {
     margin: 0;
   }
 
   .nav-list .drop-menu1 li a,
-  .nav-list .drop-menu2 li a {
+  .nav-list .drop-menu2 li a,
+  .nav-list .drop-menu3 li a {
     color: var(--grey2);
     font-size: 1.5rem;
   }
@@ -681,12 +770,12 @@ nav .wrapper {
 }
 
 .product {
-  overflow: hidden;  
+  overflow: hidden;
   padding: 10px 0;
   transition: all 0.3s linear 0s;
 }
 
-.product:hover{
+.product:hover {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.158);
   border-radius: 20px;
 }
@@ -713,7 +802,7 @@ nav .wrapper {
   font-size: 1.5rem;
 }
 
-.pad{
+.pad {
   display: flex;
   align-items: center;
 }
@@ -768,7 +857,7 @@ nav .wrapper {
   transition: all 500ms ease-in-out;
 }
 
-.btnInfo{
+.btnInfo {
   background-color: transparent;
   border: none;
   cursor: pointer;

@@ -1,18 +1,22 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from "react-router-dom";
+import { CartlistContext } from '../store/CartContext';
 
-const Item = ({productos}) => {
+const Item = ({ productos }) => {
+    const { addItem } = useContext(CartlistContext)
+    const clickHandler = () => {
+        addItem(productos)
+    }
 
-    
     return (
         <div className="product">
             <div className="img-container">
-            <img src={productos.imgProd} alt={productos.title} />
-                <div className="addCart">
+                <img src={productos.imgProd} alt={productos.title} />
+                <div onClick={clickHandler} className="addCart" style={{ cursor: 'pointer' }}>
                     <i className="fas fa-shopping-cart"></i>
                 </div>
                 <ul className="side-icons">
-                    <Link key={productos.id} to={`/item/${productos.id}`}> 
+                    <Link key={productos.id} to={`/item/${productos.id}`}>
                         <button className="btnInfo"><span><i className="fas fa-search"></i></span></button>
                     </Link>
                 </ul>
