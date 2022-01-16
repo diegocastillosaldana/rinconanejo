@@ -1,12 +1,17 @@
 import React, { useContext } from 'react'
 import Carrito from '../assets/iconos/carrito.png';
+import { Link } from "react-router-dom";
 import { CartlistContext } from '../store/CartContext';
 
 
 const CartWidget = () => {
-  const { list } = useContext(CartlistContext)
-  let cant = 1;
-  console.log(list)
+  const { list, clearCartlist, removeItem } = useContext(CartlistContext)
+  // let cant = 1;
+
+  const Clear = () => {
+    clearCartlist()
+  }
+
   return (
     <li className="icons">
       <a href="cart.html">
@@ -17,7 +22,7 @@ const CartWidget = () => {
       </a>
       <ul className="drop-menu3">
         <div className="title">
-          <h3>Articulos</h3>
+          <h3>Carrito</h3>
         </div>
         <div className="contenido">
           {list.map(product =>
@@ -30,17 +35,19 @@ const CartWidget = () => {
                 <p>S/ {product.price}</p>
               </div>
               <div className="cant">
-                <p>x{cant}</p>
+                <p>x{product.select}</p>
               </div>
               <div>
-                <button className="delete">X</button>
+                <button key={product.id} onClick={() => { removeItem(product.id) }} className="delete">X</button>
               </div>
             </div>
           )}
         </div>
         <div className="btns">
-          <button className="limpiar">Limpiar</button>
-          <button className="finalizar">Finalizar Compra</button>
+          <button className="limpiar" onClick={Clear} style={{ cursor: 'pointer' }}>Limpiar</button>
+          {/* <Link to={`/cart`}> */}
+          <button className="finalizar" style={{ cursor: 'pointer' }}>Finalizar Compra</button>
+          {/* </Link> */}
         </div>
       </ul>
     </li>

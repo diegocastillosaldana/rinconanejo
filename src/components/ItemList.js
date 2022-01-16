@@ -10,23 +10,23 @@ const ItemList = ({ soloCategoria }) => {
 
     const loadItems = async () => {
         const response = await new Promise((resolve, reject) => {
-          setTimeout(() => {
-            resolve(productosItem);
-          }, 2 * 1000);
+            setTimeout(() => {
+                resolve(productosItem);
+            }, 2 * 1000);
         });
-    
+
         return response;
     };
 
     useEffect(() => {
         const getProductos = async () => {
-          setIsLoading(true);
-          const result = await loadItems();
-          setIsLoading(false);
-          setProductos(result);
+            setIsLoading(true);
+            const result = await loadItems();
+            setIsLoading(false);
+            setProductos(result);
         };
         getProductos();
-      }, []);
+    }, []);
 
 
 
@@ -41,28 +41,28 @@ const ItemList = ({ soloCategoria }) => {
     //         setTimeout(() => {
     //             res(productosItem)
     //         }, 2000);
-            
+
     //     })
     //     getPromise.then(res => setProductos(res))
     // }
 
-    return (     
-        <div className="product-layout">      
-        {soloCategoria 
-            ?  productos.map((e)=>{
-                return (
-                    e.categoria === soloCategoria && (
-                        <Item productos={e}/>
-                    )
-                );
-            })
-            : productos.map((e) => {
-                return (
-                    <Item productos={e}/>
-                );
-            })}
+    return (
+        <div className="product-layout">
+            {soloCategoria
+                ? productos.map((e) => {
+                    return (
+                        e.categoria === soloCategoria && (
+                            <Item productos={e} />
+                        )
+                    );
+                })
+                : productos.map((e) => {
+                    return (
+                        <Item productos={e} />
+                    );
+                })}
             {isLoading && (
-                <Loader type="TailSpin" color="#fa6647" height={40} width={40}/>
+                <Loader type="TailSpin" color="#fa6647" height={40} width={40} />
             )}
             {/* {productos.map( e => 
                 <Item productos={e}/>

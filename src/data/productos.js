@@ -26,189 +26,210 @@ export default [
         id: 1,
         name: "Pisco Quebranta",
         origin: "Viña D' Los Campos",
-        stock: 10,          
+        stock: 10,
         price: 15,
         categoria: "pisco",
-        imgProd: piscoQuebranta
+        imgProd: piscoQuebranta,
+        select: 1
     },
     {
         id: 2,
         name: "Pisco Acholado",
         origin: "Viña D' Los Campos",
-        stock: 7,   
+        stock: 7,
         price: 20,
         categoria: "pisco",
-        imgProd: piscoAcholado      
+        imgProd: piscoAcholado,
+        select: 1
     },
     {
         id: 3,
         name: "Piso Puro",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 25,
         categoria: "pisco",
-        imgProd: piscoItalia              
+        imgProd: piscoItalia,
+        select: 1
     },
     {
         id: 4,
         name: "Mostro Verde Italia",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 25,
         categoria: "pisco",
-        imgProd: mostroVerdeItalia
+        imgProd: mostroVerdeItalia,
+        select: 1
     },
     {
         id: 5,
         name: "Mostro Verde Quebranta",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 25,
         categoria: "pisco",
-        imgProd: mostroVerdeQuebranta
+        imgProd: mostroVerdeQuebranta,
+        select: 1
     },
     {
         id: 6,
         name: "Macerado de Maracuya",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 20,
         categoria: "macerado",
-        imgProd: maceradoMaracuya              
+        imgProd: maceradoMaracuya,
+        select: 1
     },
     {
         id: 7,
         name: "Macerado de Aguaymanto",
         origin: "Viña D' Los Campos",
-        stock: 5, 
-        price: 20,                    
+        stock: 5,
+        price: 20,
         categoria: "macerado",
-        imgProd: maceradoAguaymanto              
+        imgProd: maceradoAguaymanto,
+        select: 1
     },
     {
         id: 8,
         name: "Macerado de Damasco",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 20,
         categoria: "macerado",
-        imgProd: maceradoDamasco             
+        imgProd: maceradoDamasco,
+        select: 1
     },
     {
         id: 9,
         name: "Macerado de Pasas",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 20,
         categoria: "macerado",
-        imgProd: maceradoPasas            
+        imgProd: maceradoPasas,
+        select: 1
     },
     {
         id: 10,
         name: "Borgoña Blanca",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 30,
         categoria: "gran-reserva",
-        imgProd: reservaBorgonaBlanca              
+        imgProd: reservaBorgonaBlanca,
+        select: 1
     },
     {
         id: 11,
         name: "Borgoña Negra",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 30,
         categoria: "gran-reserva",
-        imgProd: reservaBorgonaNegra              
+        imgProd: reservaBorgonaNegra,
+        select: 1
     },
     {
         id: 12,
         name: "Gran Rosé",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 30,
         categoria: "gran-reserva",
-        imgProd: reservaGranRose              
+        imgProd: reservaGranRose,
+        select: 1
     },
     {
         id: 13,
         name: "Borgoña Blanca",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 28,
         categoria: "semi-seco",
-        imgProd: semisecoBorgonaBlanca              
+        imgProd: semisecoBorgonaBlanca,
+        select: 1
     },
     {
         id: 14,
         name: "Gran Mistura",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 28,
         categoria: "semi-seco",
-        imgProd: semisecoGranMistura              
+        imgProd: semisecoGranMistura,
+        select: 1
     },
     {
         id: 15,
         name: "Blanco de blancos",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 28,
         categoria: "semi-seco",
-        imgProd: semisecoBlancoDeBlancos             
+        imgProd: semisecoBlancoDeBlancos,
+        select: 1
     },
     {
         id: 16,
         name: "Blanco de blancos",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 28,
         categoria: "semi-seco",
-        imgProd: semisecoBorgonaNegra             
+        imgProd: semisecoBorgonaNegra,
+        select: 1
     },
     {
         id: 17,
         name: "Blanco de blancos",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 28,
         categoria: "semi-seco",
-        imgProd: semisecoQuebranta             
+        imgProd: semisecoQuebranta,
+        select: 1
     },
     {
         id: 18,
         name: "Amor Perfecto",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 15,
         categoria: "manzanillo",
-        imgProd: manzanilloAmorPerfecto             
+        imgProd: manzanilloAmorPerfecto,
+        select: 1
     },
     {
         id: 19,
         name: "Dorada Tentación",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 15,
         categoria: "manzanillo",
-        imgProd: manzanilloDoradaTentacion
+        imgProd: manzanilloDoradaTentacion,
+        select: 1
     },
     {
         id: 20,
         name: "Dulce Pecado",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 15,
         categoria: "manzanillo",
-        imgProd: manzanilloDulcePecado
+        imgProd: manzanilloDulcePecado,
+        select: 1
     },
     {
         id: 21,
         name: "Milagro Azul",
         origin: "Viña D' Los Campos",
-        stock: 5, 
+        stock: 5,
         price: 15,
         categoria: "manzanillo",
-        imgProd: manzanilloMilagroAzul
+        imgProd: manzanilloMilagroAzul,
+        select: 1
     }
 ];
