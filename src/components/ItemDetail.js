@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
     const itemId = item.item;
 
     const clickHandler = () => {
-        addItem(itemId)
+        addItem(item)
     }
 
     const onAdd = () => {
