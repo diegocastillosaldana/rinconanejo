@@ -7,6 +7,11 @@ export const CartlistContext = createContext({
 export function CartlistContextProvider(props) {
     const [cartist, setCartlist] = useState([])
 
+    const isInCart = (itemId) => {
+        return cartist.some((e) => e.id === itemId);
+    };
+
+
     const addToCartlist = (itemID) => {
         setCartlist((prevCartist) => {
             return prevCartist.concat(itemID)
@@ -19,26 +24,26 @@ export function CartlistContextProvider(props) {
             return prevCartlist.filter(e => e.id !== itemID)
         })
     }
-    const itemIsInCartlist = (itemID) => {
-        // return cartist.filter(e => {
-        //     if (e.id === itemID) {
-        //         e.select++;
-        //     }
-        // })
-        if (cartist.some(e => e.id === itemID)) {
-            const e = cartist.map(e => {
-                if (e.id === itemID) {
-                    e.select++;
-                    e.price = e.price * e.select;
+    // const itemIsInCartlist = (itemID) => {
+    //     // return cartist.filter(e => {
+    //     //     if (e.id === itemID) {
+    //     //         e.select++;
+    //     //     }
+    //     // })
+    //     if (cartist.some(e => e.id === itemID)) {
+    //         const e = cartist.map(e => {
+    //             if (e.id === itemID) {
+    //                 e.select++;
+    //                 e.price = e.price * e.select;
 
-                } else {
-                    return e
-                }
-            })
-            cartist = [...e];
-        }
+    //             } else {
+    //                 return e
+    //             }
+    //         })
+    //         cartist = [...e];
+    //     }
 
-    }
+    // }
 
     function clearCartlist() {
         setCartlist([])
@@ -48,8 +53,9 @@ export function CartlistContextProvider(props) {
         list: cartist,
         addItem: addToCartlist,
         removeItem: removeFromCartlist,
-        itemIsInCartlist: itemIsInCartlist,
-        clearCartlist: clearCartlist
+        // itemIsInCartlist: itemIsInCartlist,
+        clearCartlist: clearCartlist,
+        isInCart
     }
 
     return (

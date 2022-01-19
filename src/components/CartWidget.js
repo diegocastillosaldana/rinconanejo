@@ -14,12 +14,12 @@ const CartWidget = () => {
 
   return (
     <li className="icons">
-      <a href="cart.html">
+      <Link to={`/cart`}>
         <span>
           <img className="carritoImg" src={Carrito} alt="" />
           <small className="count d-flex">{list.length}</small>
         </span>
-      </a>
+      </Link>
       <ul className="drop-menu3">
         <div className="title">
           <h3>Carrito</h3>
@@ -46,7 +46,8 @@ const CartWidget = () => {
         <div className="btns">
           <button className="limpiar" onClick={Clear} style={{ cursor: 'pointer' }}>Limpiar</button>
           {/* <Link to={`/cart`}> */}
-          <button className="finalizar" style={{ cursor: 'pointer' }}>Finalizar Compra</button>
+          <Link to={`/cart`} className="finalizar" style={{ cursor: 'pointer' }}>Finalizar</Link>
+          {/* <button className="finalizar" style={{ cursor: 'pointer' }}>Finalizar Compra</button> */}
           {/* </Link> */}
         </div>
       </ul>

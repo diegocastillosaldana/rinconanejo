@@ -3,9 +3,13 @@ import { Link } from "react-router-dom";
 import { CartlistContext } from '../store/CartContext';
 
 const Item = ({ productos }) => {
-    const { addItem } = useContext(CartlistContext)
+    const { addItem, isInCart } = useContext(CartlistContext)
     const clickHandler = () => {
-        addItem(productos)
+        if (isInCart(productos.id)) {
+            alert('existe')
+        } else {
+            addItem(productos)
+        }
     }
 
     return (

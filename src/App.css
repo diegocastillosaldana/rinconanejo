@@ -216,6 +216,17 @@ nav .wrapper {
   border: none;
   border-radius: 10px;
 }
+.nav-list .drop-menu3 .btns button:hover {
+  color: red;
+}
+
+.nav-list .drop-menu3 .btns a {
+  width: 45%;
+  padding-left: 57px;
+  background-color: #88a7d04f;
+  border: none;
+  border-radius: 10px;
+}
 
 /**/
 
@@ -1162,7 +1173,7 @@ td a {
 }
 
 td img {
-  width: 8rem;
+  width: 5rem;
   height: 8rem;
   margin-right: 1rem;
 }

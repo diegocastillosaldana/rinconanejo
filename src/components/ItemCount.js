@@ -23,6 +23,10 @@ function ItemCount({ stock, initial, onAdd }) {
                         {contador}
                         <button style={{ borderRadius: "20px", cursor: "pointer", display: 'flex', alignItems: "center", marginBottom: "1px", padding: '0 10px', border: 'none', fontSize: '30px' }} onClick={aumentar}>+</button>
                     </span>
+                    <div style={{ width: "400px" }}>
+                        <button onClick={onAdd} className="addCart">Añadir al carrito</button>
+                    </div>
+
                 </div>
             </div>
         </>

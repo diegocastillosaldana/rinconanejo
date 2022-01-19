@@ -7,24 +7,27 @@ import { CartlistContext } from '../store/CartContext';
 const ItemDetail = ({ item }) => {
 
     const [added, setAdded] = useState(false)
+    const [isAdd, setIsAdd] = useState(false)
 
-    const { addItem } = useContext(CartlistContext)
+    const { addItem, isInCart } = useContext(CartlistContext)
 
     const itemId = item.item;
 
-    const clickHandler = () => {
-        addItem(item)
-    }
-
     const onAdd = () => {
-        clickHandler();
         setAdded(true);
     }
 
     useEffect(() => {
-        console.log('added', added);
+        if (added) {
+            console.log('added', added);
+            if (isInCart(item.id)) {
+                alert('existe')
+            } else {
+                addItem(item)
+                setIsAdd(true)
+            }
+        }
     }, [added])
-
 
     return (
         <div>
@@ -52,11 +55,8 @@ const ItemDetail = ({ item }) => {
                                 {!added &&
                                     <>
                                         <ItemCount onAdd={onAdd} stock={item.stock} initial={1} />
-                                        <div style={{ width: "400px" }}>
-                                            <button onClick={onAdd} className="addCart">Añadir al carrito</button>
-                                        </div>
                                     </>
-                                }{added &&
+                                }{isAdd &&
                                     <>
                                         <h1 style={{ color: "#69ae14", marginLeft: "80px" }}>✓</h1>
                                         <Link to={`/cart`}>
@@ -66,7 +66,6 @@ const ItemDetail = ({ item }) => {
                                 }
 
                             </div>
-                            {/* <a href="cart.html" className="addCart">Add To Cart</a> */}
                         </div>
                     </div>
                 </div>
