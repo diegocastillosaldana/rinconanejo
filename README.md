@@ -4,11 +4,11 @@ Este proyecto de ecommerce se inició con [Create React App](https://github.com/
 
 ## Algunos elementos usados para el funcionamiento del proyecto
 
--Se utilizó react router para la navegación entre paginas del proyecto
+-Se utilizó react router para la navegación entre páginas del proyecto
 
--Se utilizó un spinner loader para crear la animación de carga miestras los articulos de la tienda se estan llamando.
+-Se utilizó un spinner loader para crear la animación de carga mientras los artículos de la tienda se están llamando.
 
--Se utilizó CSS nativo para el desarrollo del ecommerce, es decir, no se usó ningun libreria como bootstrap u otros para el estilizado del sitio web.
+-Se utilizó CSS nativo para el desarrollo del ecommerce, es decir, no se usó ningún libreria como bootstrap u otros para el estilizado del sitio web.
 
 ## Algunos apartados y comandos de react para el proyecto
 In the project directory, you can run:
