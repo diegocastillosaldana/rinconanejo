@@ -10,6 +10,12 @@ Este proyecto de ecommerce se inició con [Create React App](https://github.com/
 
 -Se utilizó CSS nativo para el desarrollo del ecommerce, es decir, no se usó ningún libreria como bootstrap u otros para el estilizado del sitio web.
 
+-Los articulos antes mencionados estan siendo alojados y llamados desde en una carpeta que tiene por nombre "productos.js", hasta este ultimo commit del proyecto se intento integrar el servicio de firebase para el llamado de articulos pero en su ejecucion salian errores en consola y por lo cual no esta presente en este proyecto.
+
+## Aclaración en el uso de Firebase
+
+-Como se mencionó anteriormente en el proyecto esta previsto el uso de firebase para el llamado dinamico de los articulos  posteior mente la gestion de pedidos, sin embargo no se pudo efectuar esta implementación por algunos errores en el proyecto. Sin embargo, se esta viendo para solucionarlo y poder presentar un proyecto 100% funcional. 
+
 ## Algunos apartados y comandos de react para el proyecto
 In the project directory, you can run:
 
