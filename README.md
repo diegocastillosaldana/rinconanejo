@@ -1,9 +1,11 @@
-# Getting Started with Create React App
+# Ecommerce "Rincón Añejo" creado con React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto de ecommerce se inició con [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
+
+
+## Algunos apartados y comandos de react para el proyecto
 In the project directory, you can run:
 
 ### `npm start`
